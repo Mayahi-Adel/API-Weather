@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Méteo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient"></div>
+            <div class="date-container">
+                <h2>  </h2>
+                <span class="date-day">  </span>
+                <img src="./img/localisation.png"  alt="location icon">
+                <span class="location"></span>
+            </div>
+            <div class="weather-container">
+                <img id="icon-weather" src="" alt="" >
+                <h1 class="weather-temp"></h1>
+                <h3></h3>
+            </div>
+        </div>
+
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <div class="precipitation">
+                        <span class="title">TEMP MAX - MIN</span>
+                        <span class="value"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity">
+                        <span class="title"> HUMIDITE</span>
+                        <span class="value"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="wind">
+                        <span class="title"> VENT </span>
+                        <span class="value"></span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="week-container">
+                    <ul class="week-list">
+                        
+                        
+                    </ul>
+                </div>
+                <div class="location-container">
+                    <input type="search" id="input" value="Changer la localisation" class="location-button" onchange="meteo()" onfocus="CleanSearch()">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
+
